@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Nunito+Sans:wght@300;600;800&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --faded: rgb(46, 46, 46);
+  --faded-nav: rgb(57, 57, 57);
+}
+
 *,
 *::after,
 *::before {
@@ -8,23 +14,34 @@
   /* font-family: "Roboto", sans-serif; */
   /* font-family: "Poppins", sans-serif; */
   font-family: "Nunito Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 /*! HEADER */
 .header-holder {
   /* max-width: 45px; */
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 50px;
-  background-color: beige;
+  padding: 0 80px;
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(7px);
+  box-shadow: 0 0 0.8rem 0 rgba(0, 0, 0, 0.1);
 }
 
 .logo-holder {
   display: flex;
   align-items: center;
+  flex-basis: 25%;
+  /* border: 1px solid black; */
+  gap: 5px;
 }
 
 .logo {
@@ -32,6 +49,87 @@
   /* width: 30px; */
 }
 
-.other {
+.logo-text {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--faded);
+}
+
+.nav {
   display: flex;
+  flex-basis: 40%;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--faded-nav);
+  position: relative;
+}
+
+.nav > a {
+  color: var(--faded-nav);
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 4px 0px;
+  border-radius: 0.3rem;
+}
+
+.hover {
+  position: absolute;
+  background-color: rgba(132, 132, 132, 0.1);
+  height: 30px;
+  border-radius: 0.3rem;
+  opacity: 0;
+  z-index: -1;
+  align-self: center;
+  transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.7s;
+  backdrop-filter: blur(5px);
+}
+
+.nav a:nth-child(1):hover ~ .hover {
+  width: 116px;
+  opacity: 1;
+  left: 13px;
+}
+.nav a:nth-child(2):hover ~ .hover {
+  width: 68px;
+  opacity: 1;
+  left: 156px;
+}
+.nav a:nth-child(3):hover ~ .hover {
+  width: 89px;
+  opacity: 1;
+  left: 252px;
+}
+.nav a:nth-child(4):hover ~ .hover {
+  width: 76px;
+  opacity: 1;
+  left: 368px;
+}
+.nav a:nth-child(5):hover ~ .hover {
+  width: 60px;
+  opacity: 1;
+  left: 471px;
+}
+
+.other {
+  font-size: 0.9rem;
+  display: flex;
+  font-weight: 600;
+  justify-content: flex-end;
+  flex-basis: 25%;
+  gap: 4%;
+}
+
+.other-item {
+  color: var(--faded-nav);
+  padding: 4px 13px;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.7s;
+}
+
+.other-item:hover {
+  background-color: rgba(132, 132, 132, 0.1);
 }
