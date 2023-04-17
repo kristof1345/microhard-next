@@ -11,15 +11,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* font-family: "Roboto", sans-serif; */
-  /* font-family: "Poppins", sans-serif; */
   font-family: "Nunito Sans", sans-serif;
   scroll-behavior: smooth;
 }
 
 /*! HEADER */
 .header-holder {
-  /* max-width: 45px; */
   position: fixed;
   top: 0;
   width: 100%;
@@ -40,13 +37,11 @@
   display: flex;
   align-items: center;
   flex-basis: 25%;
-  /* border: 1px solid black; */
   gap: 5px;
 }
 
 .logo {
   height: 27px;
-  /* width: 30px; */
 }
 
 .logo-text {
