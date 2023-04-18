@@ -128,3 +128,54 @@
 .other-item:hover {
   background-color: rgba(132, 132, 132, 0.1);
 }
+
+/*! HOME PAGE */
+#home-main {
+  padding-top: 50px;
+}
+
+/** IMG SLIDER */
+.image-slider {
+  position: relative;
+}
+
+#slide1,
+#slide2 {
+  display: none;
+}
+
+#slide1 {
+  background-image: url("../../public/jumbo1.avif");
+  height: 480px;
+  background-size: contain;
+}
+#slide2 {
+  background-image: url("../../public/jumbo2.avif");
+  height: 480px;
+  background-size: contain;
+}
+
+.active-slide {
+  display: block !important;
+}
+
+.dot-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+
+.dot-container > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
