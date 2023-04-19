@@ -24,6 +24,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 5;
 }
 
 .header {
@@ -141,7 +142,7 @@ body {
 /** IMG SLIDER */
 .image-slider {
   position: relative;
-  height: 480px;
+  height: 475px;
 }
 
 .slide {
@@ -194,7 +195,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 55px;
+  height: 75px;
   gap: 25px;
 }
 
@@ -271,12 +272,16 @@ body {
   align-items: center;
   gap: 200px;
   height: 70px;
-  border: 1px solid black;
-  margin: 20px 0px;
 }
 
 .shop-sec > div > img {
   width: 30px;
+}
+
+.shop-sec > div > div {
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 .item-1,
@@ -286,5 +291,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 100px;
+  transition: all 300ms ease-in-out;
+}
+
+.item-1:hover,
+.item-2:hover,
+.item-3:hover {
+  padding-bottom: 8px;
+}
+
+/** POST SEC */
+.post-sec {
+  display: flex;
   justify-content: space-around;
 }
