@@ -3,6 +3,8 @@
 :root {
   --faded: rgb(46, 46, 46);
   --faded-nav: rgb(57, 57, 57);
+  --faded-text: rgb(65, 65, 65);
+  --btn: #0067b8;
 }
 
 *,
@@ -84,7 +86,6 @@ body {
   z-index: -1;
   align-self: center;
   transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.7s;
-  backdrop-filter: blur(5px);
 }
 
 .nav a:nth-child(1):hover ~ .hover {
@@ -262,7 +263,7 @@ body {
   font-weight: 600;
   border-radius: 0.15rem;
   border: none;
-  background-color: #0067b8;
+  background-color: var(--btn);
   color: white;
 }
 
@@ -272,7 +273,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 200px;
-  height: 70px;
+  height: 90px;
 }
 
 .shop-sec > div > img {
@@ -307,8 +308,8 @@ body {
 /** POST SEC */
 .posts-sec {
   display: flex;
-  justify-content: space-around;
-  padding: 50px 70px;
+  justify-content: space-between;
+  padding: 70px 80px 90px 80px;
 }
 
 .post {
@@ -317,4 +318,93 @@ body {
 
 .post > img {
   width: 300px;
+  border-radius: 0.15rem;
+}
+
+.post > h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
+.post > p {
+  font-weight: 500;
+  margin-bottom: 17px;
+  font-size: 0.97rem;
+}
+
+.post > div {
+  position: relative;
+}
+
+.post > div > button {
+  background-color: var(--btn);
+  padding: 8px 14px;
+  color: white;
+  font-weight: 600;
+  border-radius: 0.15rem;
+  border: none;
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+}
+
+.post > div > button:hover {
+  transform: translate(-8%, -15%);
+}
+
+.post > div > div {
+  padding: 8px 13px;
+  color: white;
+  font-weight: 600;
+  border-radius: 0.15rem;
+  border: none;
+  background-color: rgba(0, 103, 184, 0.25);
+  display: inline;
+  font-size: 0.85rem;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+/** BING SEC */
+.bing-sec {
+  padding: 0px 80px;
+}
+
+.bing-sec > div {
+  background-image: url("../../public/section1.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 514px;
+  width: 1367px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0.15rem;
+  padding: 0px 0px 0px 100px;
+}
+
+.bing-sec > div > h3 {
+  font-size: 2.5rem;
+  color: white;
+  max-width: 400px;
+}
+
+.bing-sec > div > p {
+  color: white;
+  font-size: 1.1rem;
+  max-width: 500px;
+  margin: 15px 0px;
+}
+
+.bing-sec > div > button {
+  background-color: var(--btn);
+  padding: 8px 14px;
+  max-width: 140px;
+  color: white;
+  font-weight: 600;
+  border-radius: 0.15rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
 }

@@ -26,11 +26,24 @@ const Index_main = () => {
         {Posts1.map((post, i) => (
           <div className="post" key={i}>
             <img src={edge.src} alt="post image" />
-            <h4>{post.title}</h4>
+            <h2>{post.title}</h2>
             <p>{post.description}</p>
-            <button>Shop Now</button>
+            <div>
+              <button>Shop Now</button>
+              <div>Shop Now</div>
+            </div>
           </div>
         ))}
+      </div>
+      <div className="bing-sec">
+        <div>
+          <h3>Introducing the new Bing</h3>
+          <p>
+            Your AI-powered copilot for the web. Ask questions. Chat to refine
+            results. Get comprehensive answers and creative inspiration.
+          </p>
+          <button>Join the preview</button>
+        </div>
       </div>
     </div>
   );

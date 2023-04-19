@@ -60,7 +60,7 @@ const Slider = () => {
       <div className="image-slider">
         <div id="slide1" className="slide" data-index="0" data-status="active">
           <div className="content-s1">
-            <h2 className="slide-title">Microhard 365</h2>
+            <h1 className="slide-title">Microhard 365</h1>
             <p className="slide-p">
               Turn your ideas into reality, stay safer online and off, and focus
               on what matters most with Microsoft 365 apps
@@ -75,7 +75,7 @@ const Slider = () => {
           data-status="inactive"
         >
           <div className="content-s2">
-            <h2 className="slide-title">Microhard 365</h2>
+            <h1 className="slide-title">Microhard 365</h1>
             <p className="slide-p">
               Turn your ideas into reality, stay safer online and off, and focus
               on what matters most with Microsoft 365 apps
