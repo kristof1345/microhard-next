@@ -21,6 +21,11 @@ body {
   overflow-x: hidden;
 }
 
+.btn:hover {
+  box-shadow: 0 0 0.5rem 2px rgba(90, 89, 89, 0.1);
+  filter: brightness(95%);
+}
+
 /*! HEADER */
 .header-holder {
   position: fixed;
@@ -35,7 +40,7 @@ body {
   justify-content: space-between;
   height: 50px;
   padding: 0 80px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(7px);
   box-shadow: 0 0 0.8rem 0 rgba(0, 0, 0, 0.1);
 }
@@ -45,6 +50,7 @@ body {
   align-items: center;
   flex-basis: 25%;
   gap: 5px;
+  text-decoration: none;
 }
 
 .logo {
@@ -54,7 +60,7 @@ body {
 .logo-text {
   font-weight: 700;
   font-size: 1.3rem;
-  color: var(--faded);
+  color: var(--faded-nav);
 }
 
 .nav {
@@ -89,24 +95,24 @@ body {
 }
 
 .nav a:nth-child(1):hover ~ .hover {
-  width: 116px;
+  width: 118px;
   opacity: 1;
-  left: 13px;
+  left: 10px;
 }
 .nav a:nth-child(2):hover ~ .hover {
-  width: 68px;
+  width: 56px;
   opacity: 1;
-  left: 157px;
+  left: 146px;
 }
 .nav a:nth-child(3):hover ~ .hover {
-  width: 89px;
+  width: 86px;
   opacity: 1;
-  left: 252px;
+  left: 221px;
 }
 .nav a:nth-child(4):hover ~ .hover {
-  width: 76px;
+  width: 124px;
   opacity: 1;
-  left: 369px;
+  left: 326px;
 }
 .nav a:nth-child(5):hover ~ .hover {
   width: 60px;
@@ -265,6 +271,7 @@ body {
   border: none;
   background-color: var(--btn);
   color: white;
+  text-decoration: none;
 }
 
 /** CONTENT */
@@ -289,6 +296,8 @@ body {
 .item-1,
 .item-2,
 .item-3 {
+  color: black;
+  text-decoration: none;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -310,6 +319,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 70px 80px 90px 80px;
+  position: relative;
 }
 
 .post {
@@ -337,19 +347,22 @@ body {
   position: relative;
 }
 
-.post > div > button {
+.post > div > a {
+  text-decoration: none;
+  font-size: 14.4px;
   background-color: var(--btn);
-  padding: 8px 14px;
+  padding: 8px 12px;
   color: white;
   font-weight: 600;
   border-radius: 0.15rem;
   border: none;
   transition: all 150ms ease-in-out;
   cursor: pointer;
+  position: absolute;
 }
 
-.post > div > button:hover {
-  transform: translate(-8%, -15%);
+.post > div > a:hover {
+  transform: translate(-10%, -15%);
 }
 
 .post > div > div {
@@ -366,9 +379,15 @@ body {
   z-index: -1;
 }
 
+.for-business {
+  font-size: 2.1rem;
+  position: absolute;
+  top: 10px;
+}
+
 /** BING SEC */
 .bing-sec {
-  padding: 0px 80px;
+  padding: 0px 80px 50px 80px;
 }
 
 .bing-sec > div {
@@ -384,6 +403,14 @@ body {
   padding: 0px 0px 0px 100px;
 }
 
+#second > div {
+  background-image: url("../../public/section2.jpeg");
+  margin-bottom: 10px;
+}
+#second > div > h3 {
+  max-width: 500px;
+}
+
 .bing-sec > div > h3 {
   font-size: 2.5rem;
   color: white;
@@ -397,14 +424,58 @@ body {
   margin: 15px 0px;
 }
 
-.bing-sec > div > button {
+.bing-sec > div > a {
+  display: inline;
+  text-decoration: none;
   background-color: var(--btn);
   padding: 8px 14px;
-  max-width: 140px;
+  width: max-content;
   color: white;
   font-weight: 600;
   border-radius: 0.15rem;
   border: none;
   cursor: pointer;
   margin-top: 5px;
+}
+
+/*! SEEDS PAGE */
+#seeds-main {
+  margin-top: 50px;
+  background-color: rgba(37, 15, 4, 255);
+  min-height: 100vh;
+}
+
+.seeds-jumbo {
+  height: 570px;
+  background-image: url("../../public/seeds_main.webp");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.gradient {
+  height: 500px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0),
+    rgba(37, 15, 4, 255)
+  );
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/*! FOOTER */
+.footer {
+  background-color: rgba(239, 239, 239, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 80px;
+  font-size: 0.95rem;
+}
+
+.footer span:nth-child(1) {
+  font-size: 1.2rem;
+  font-weight: 600;
 }

@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
+import Link from "next/link";
 
-const Slider = () => {
+export default function Slider() {
   let activeIndex = 0;
 
   const handleLeftClick = () => {
@@ -65,7 +64,9 @@ const Slider = () => {
               Turn your ideas into reality, stay safer online and off, and focus
               on what matters most with Microsoft 365 apps
             </p>
-            <button className="s-btn">Choose your Microhard 365</button>
+            <Link href="#" className="s-btn btn">
+              Choose your Microhard 365
+            </Link>
           </div>
         </div>
         <div
@@ -80,7 +81,9 @@ const Slider = () => {
               Turn your ideas into reality, stay safer online and off, and focus
               on what matters most with Microsoft 365 apps
             </p>
-            <button className="s-btn">Choose your Microhard 365</button>
+            <Link href="#" className="s-btn btn">
+              Choose your Microhard 365
+            </Link>
           </div>
         </div>
       </div>
@@ -99,6 +102,4 @@ const Slider = () => {
       </div>
     </div>
   );
-};
-
-export default Slider;
+}

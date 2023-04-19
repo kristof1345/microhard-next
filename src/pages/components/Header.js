@@ -1,41 +1,39 @@
 import logo from "../../../public/logo.png";
+import Link from "next/link";
 
 export default function Header() {
   return (
     <div className="header-holder">
       <div className="header">
-        <div className="logo-holder">
+        <Link href="/" className="logo-holder">
           <img src={logo.src} alt="microsoft logo" className="logo" />
           <span className="logo-text">Microhard</span>
-        </div>
+        </Link>
         <nav className="nav">
-          <a href="#" className="nav-item">
-            Microsoft 365
-          </a>
-          <a href="#" className="nav-item">
-            Teams
-          </a>
-          <a href="#" className="nav-item">
+          <Link href="#" className="nav-item">
+            Microhard 365
+          </Link>
+          <Link href="#" className="nav-item">
+            Bing
+          </Link>
+          <Link href="#" className="nav-item">
             Windows
-          </a>
-          <a href="#" className="nav-item">
-            Surface
-          </a>
-          <a href="#" className="nav-item">
-            Xbox
-          </a>
+          </Link>
+          <Link href="#" className="nav-item">
+            Microhard Edge
+          </Link>
+          <Link href="/seeds" className="nav-item">
+            Seeds
+          </Link>
           <div className="hover"></div>
         </nav>
         <div className="other">
-          <a href="#" className="other-item">
+          <Link href="#" className="other-item">
             Search
-          </a>
-          <a href="#" className="other-item">
-            Cart
-          </a>
-          <a href="#" className="other-item">
+          </Link>
+          <Link href="#" className="other-item">
             User
-          </a>
+          </Link>
         </div>
       </div>
     </div>
