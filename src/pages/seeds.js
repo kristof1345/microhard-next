@@ -4,6 +4,7 @@ import { MdContentCopy } from "react-icons/md";
 import mid1 from "../../public/mid1.webp";
 import mid2 from "../../public/mid2.webp";
 import mid3 from "../../public/mid3.webp";
+import FadeInSection from "./components/FadeInSection";
 
 export default function Seeds() {
   return (
@@ -35,16 +36,18 @@ export default function Seeds() {
               <BsFacebook />
               <BsLinkedin />
             </div>
-            <div className="quote-holder">
-              "Nobody accepts that heatwaves are a threat. They say, ‘It’s hot
-              everywhere, what’s so special about our area?’ Yet, every day
-              people suffer heatstroke, diarrhea, dehydration—even sunburn so
-              severe their faces are unrecognizable."
-              <p>
-                Rinki Gupta
-                <br /> Project Manager, SEEDS
-              </p>
-            </div>
+            <FadeInSection>
+              <div className="quote-holder">
+                "Nobody accepts that heatwaves are a threat. They say, ‘It’s hot
+                everywhere, what’s so special about our area?’ Yet, every day
+                people suffer heatstroke, diarrhea, dehydration—even sunburn so
+                severe their faces are unrecognizable."
+                <p>
+                  Rinki Gupta
+                  <br /> Project Manager, SEEDS
+                </p>
+              </div>
+            </FadeInSection>
           </div>
           <div className="cont-col2">
             <p>
@@ -83,88 +86,91 @@ export default function Seeds() {
           </div>
         </div>
         <div className="mid-sec">
-          <div className="mid-sec_item">
-            <div>
-              <img src={mid1.src} alt="images" />
+          <FadeInSection>
+            <div className="mid-sec_item">
+              <div>
+                <img src={mid1.src} alt="images" />
+              </div>
+              <p>
+                SEED community mobilizers use AI-generated maps to find high
+                risk homes
+              </p>
             </div>
-            <p>
-              SEED community mobilizers use AI-generated maps to find high risk
-              homes
-            </p>
-          </div>
-          <div className="mid-sec_item">
-            <div>
-              <img src={mid2.src} alt="images" />
+          </FadeInSection>
+          <FadeInSection>
+            <div className="mid-sec_item">
+              <div>
+                <img src={mid2.src} alt="images" />
+              </div>
+              <p>
+                SEED community mobilizers use AI-generated maps to find high
+                risk homes
+              </p>
             </div>
-            <p>
-              SEED community mobilizers use AI-generated maps to find high risk
-              homes
-            </p>
-          </div>
-          <div className="mid-sec_item">
-            <div>
-              <img src={mid3.src} alt="images" />
+          </FadeInSection>
+          <FadeInSection>
+            <div className="mid-sec_item">
+              <div>
+                <img src={mid3.src} alt="images" />
+              </div>
+              <p>
+                SEED community mobilizers use AI-generated maps to find high
+                risk homes
+              </p>
             </div>
-            <p>
-              SEED community mobilizers use AI-generated maps to find high risk
-              homes
-            </p>
-          </div>
+          </FadeInSection>
         </div>
         <div className="main-content">
           <div className="cont-col1">
             <div className="icons">
-              <MdContentCopy />
-              <BsTwitter />
-              <BsFacebook />
-              <BsLinkedin />
+              <br />
             </div>
-            <div className="quote-holder">
-              "Nobody accepts that heatwaves are a threat. They say, ‘It’s hot
-              everywhere, what’s so special about our area?’ Yet, every day
-              people suffer heatstroke, diarrhea, dehydration—even sunburn so
-              severe their faces are unrecognizable."
+            <FadeInSection>
+              <div className="quote-holder">
+                "We’d evacuate to the roof with all our food. Sometimes we’d
+                stay for months until the water receded."
+                <p>
+                  Rinki Gupta
+                  <br /> Project Manager, SEEDS
+                </p>
+              </div>
+            </FadeInSection>
+          </div>
+          <FadeInSection>
+            <div className="cont-col2">
               <p>
-                Rinki Gupta
-                <br /> Project Manager, SEEDS
+                For much of her early life, she and her family fended for
+                themselves. Against inequity. And extreme weather. Growing up in
+                Bihar, a small village in East India bordering Nepal, dealing
+                with disaster was just part of life.
+              </p>
+              <p>
+                But instead of panicking every time the water encroached, her
+                family prepared. “We’d hear from the neighboring village, ‘the
+                water is coming, it will reach you in a day.’ So, my grandfather
+                collected the gehu (wheat), rice grains, and other dry rations
+                and put them on the roof beforehand. We’d use kerosene oil to
+                light diyas (oil lamps) and made our own candles at home. We did
+                this in advance so we would not be affected by the floods.”
+              </p>
+              <p>
+                The spirit of resiliency took root in Rinki and stayed with her
+                even after she moved from Bihar to Delhi to get married. There,
+                her father-in-law encouraged her education, helping her realize
+                what she and her family lacked in Bihar: support. “When I
+                started getting support in life, that’s when I noticed others
+                weren’t getting it. It made me want to bring about positive
+                change in other people’s lives.”
+              </p>
+              <p>
+                So, she vowed to do that. First, by working as a teacher helping
+                educate and empower women. Then, as a social worker advocating
+                for the needs of India’s Tribes. And now, as a project manager
+                at SEEDS, where she unites her perseverance and passion for
+                social good.
               </p>
             </div>
-          </div>
-          <div className="cont-col2">
-            <p>
-              Delhi’s climate is extreme. Winter wraps the area in dense fog and
-              cool air. Monsoon season unleashes torrential rain, often sending
-              the Yamuna River rushing over its banks into nearby villages and
-              valleys. But summer is the most intense. An unbearable heat
-              blankets the city from April to June. In this window, the
-              temperature begins its brutal climb.
-            </p>
-            <p>95° F/35° C… 110° F/43° C… 120° F/48° C…</p>
-            <p>
-              Even the smallest flame—like a candle or kiln fire—will burn for
-              days. Never dying out. It’s an emergency, but many don’t see it
-              that way. Because they can’t see it at all.
-            </p>
-            <p>
-              As disasters, cyclones command attention. You can physically see
-              their fury. Wind ripping homes apart. Floodwater swallowing entire
-              villages whole. But heat is invisible. And to Rinki Gupta, that’s
-              why it’s so dangerous.
-            </p>
-            <p>
-              The government advises people to stay indoors during the sun’s
-              blistering peak, from 12pm-3pm. But rickshaw drivers, construction
-              workers, and other daily wage laborers can’t sacrifice a day’s
-              earnings. And for the millions of people living in Delhi’s densely
-              packed dwellings, the temperatures inside their tin homes are even
-              hotter than outside.
-            </p>
-            <p>
-              They’re who Rinki worries about. Because though they’re the most
-              at risk of heat-related illness and death, they receive the least
-              support.
-            </p>
-          </div>
+          </FadeInSection>
         </div>
       </main>
     </>
