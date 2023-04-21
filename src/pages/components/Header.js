@@ -13,7 +13,7 @@ export default function Header() {
           <Link href="#" className="nav-item">
             Microhard 365
           </Link>
-          <Link href="#" className="nav-item">
+          <Link href="/bing" className="nav-item">
             Bing
           </Link>
           <Link href="#" className="nav-item">
