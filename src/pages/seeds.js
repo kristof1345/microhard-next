@@ -1,4 +1,6 @@
 import Head from "next/head";
+import { BsTwitter, BsFacebook, BsLinkedin } from "react-icons/bs";
+import { MdContentCopy } from "react-icons/md";
 
 export default function Seeds() {
   return (
@@ -10,7 +12,68 @@ export default function Seeds() {
       </Head>
       <main id="seeds-main">
         <div className="seeds-jumbo">
+          <div className="SJ-big-cont">
+            <h5>FOR LIFE ON EARTH</h5>
+            <div className="SJ-sm-cont">
+              <h1>Survive. Adapt. Thrive.</h1>
+              <p>
+                SEEDS is using Microsoft AI to make climate change threats
+                visible for the most vulnerable
+              </p>
+            </div>
+          </div>
           <div className="gradient"></div>
+        </div>
+        <div className="main-content">
+          <div className="cont-col1">
+            <div className="icons">
+              <MdContentCopy />
+              <BsTwitter />
+              <BsFacebook />
+              <BsLinkedin />
+            </div>
+            <div className="quote-holder">
+              "Nobody accepts that heatwaves are a threat. They say, ‘It’s hot
+              everywhere, what’s so special about our area?’ Yet, every day
+              people suffer heatstroke, diarrhea, dehydration—even sunburn so
+              severe their faces are unrecognizable."
+            </div>
+          </div>
+          <div className="cont-col2">
+            <p>
+              Delhi’s climate is extreme. Winter wraps the area in dense fog and
+              cool air. Monsoon season unleashes torrential rain, often sending
+              the Yamuna River rushing over its banks into nearby villages and
+              valleys. But summer is the most intense. An unbearable heat
+              blankets the city from April to June. In this window, the
+              temperature begins its brutal climb.
+            </p>
+            <p>95° F/35° C… 110° F/43° C… 120° F/48° C…</p>
+            <p>
+              Even the smallest flame—like a candle or kiln fire—will burn for
+              days. Never dying out. It’s an emergency, but many don’t see it
+              that way. Because they can’t see it at all.
+            </p>
+            <p>
+              As disasters, cyclones command attention. You can physically see
+              their fury. Wind ripping homes apart. Floodwater swallowing entire
+              villages whole. But heat is invisible. And to Rinki Gupta, that’s
+              why it’s so dangerous.
+            </p>
+            <p>
+              The government advises people to stay indoors during the sun’s
+              blistering peak, from 12pm-3pm. But rickshaw drivers, construction
+              workers, and other daily wage laborers can’t sacrifice a day’s
+              earnings. And for the millions of people living in Delhi’s densely
+              packed dwellings, the temperatures inside their tin homes are even
+              hotter than outside.
+            </p>
+            <p>
+              They’re who Rinki worries about. Because though they’re the most
+              at risk of heat-related illness and death, they receive the least
+              support.
+            </p>
+          </div>
         </div>
       </main>
     </>

@@ -446,6 +446,7 @@ body {
 }
 
 .seeds-jumbo {
+  color: #faf4cc;
   height: 570px;
   background-image: url("../../public/seeds_main.webp");
   background-size: cover;
@@ -464,7 +465,43 @@ body {
   bottom: 0;
   width: 100%;
 }
+.SJ-sm-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.SJ-sm-cont > h1 {
+  font-size: 3.7rem;
+  font-weight: 700;
+}
+.SJ-sm-cont > p {
+  max-width: 330px;
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.SJ-big-cont {
+  height: 85%;
+  padding: 0px 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 20px;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.SJ-big-cont > h5 {
+  font-weight: 600;
+}
+
+/** SEEDS MAIN CONTENT */
+
+.icons {
+  color: #faf4cc;
+}
 /*! FOOTER */
 .footer {
   background-color: rgba(239, 239, 239, 0.85);
