@@ -499,9 +499,61 @@ body {
 
 /** SEEDS MAIN CONTENT */
 
+.main-content {
+  display: flex;
+  color: #faf4cc;
+  padding: 20px 120px 100px 120px;
+  gap: 50px;
+}
+
 .icons {
   color: #faf4cc;
+  display: flex;
+  gap: 25px;
+  font-size: 1.45rem;
 }
+
+.cont-col1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quote-holder {
+  font-size: 1.9rem;
+  width: 510px;
+}
+
+.quote-holder > p {
+  color: #c5bb9a;
+  font-size: 0.95rem;
+}
+
+.cont-col2 {
+  display: flex;
+  flex-basis: 300%;
+  flex-direction: column;
+  gap: 20px;
+  color: #c5bb9a;
+  font-size: 1.1rem;
+}
+
+.mid-sec {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 0;
+  background-color: #faf4cc;
+  margin-bottom: 80px;
+}
+
+.mid-sec_item {
+  width: 400px;
+}
+
+.mid-sec_item > div > img {
+  width: 100%;
+}
+
 /*! FOOTER */
 .footer {
   background-color: rgba(239, 239, 239, 0.85);
