@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Card from "./components/card";
+import Link from "next/link";
+import Question from "./components/question";
 
 export default function Bing() {
   const cards = [1, 2, 3, 4, 5, 6];
@@ -21,7 +23,7 @@ export default function Bing() {
           <h2>Ask real questions. Get complete answers. Chat and create.</h2>
           <h3>You're in! Welcome to the new Bing!</h3>
           <p>Unlock the full experience on Microsoft Edge</p>
-          <button>Open in Microhard Edge</button>
+          <Link href="#">Open in Microhard Edge</Link>
         </div>
         <div className="ask-anything">
           <h2>Ask anything</h2>
@@ -32,6 +34,15 @@ export default function Bing() {
           <div className="cards">
             {cards.map((card, i) => (
               <Card key={i} />
+            ))}
+          </div>
+        </div>
+        <div className="questions-bing">
+          <h2>Frequently Asked Questions</h2>
+          <p>Have questions? Start here</p>
+          <div className="questions-dropdown">
+            {cards.map((q) => (
+              <Question />
             ))}
           </div>
         </div>
