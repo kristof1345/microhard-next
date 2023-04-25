@@ -43,7 +43,7 @@ export default function Index_main() {
             Your AI-powered copilot for the web. Ask questions. Chat to refine
             results. Get comprehensive answers and creative inspiration.
           </p>
-          <Link href="#" className="btn">
+          <Link href="/bing" className="btn">
             Join the preview
           </Link>
         </div>
@@ -56,7 +56,7 @@ export default function Index_main() {
             <h2>{post.title}</h2>
             <p>{post.description}</p>
             <div>
-              <Link href="#">Shop Now</Link>
+              <Link href="/edge">Shop Now</Link>
               <div>Shop Now</div>
             </div>
           </div>

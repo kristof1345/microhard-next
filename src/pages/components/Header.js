@@ -19,7 +19,7 @@ export default function Header() {
           <Link href="#" className="nav-item">
             Windows
           </Link>
-          <Link href="#" className="nav-item">
+          <Link href="/edge" className="nav-item">
             Microhard Edge
           </Link>
           <Link href="/seeds" className="nav-item">
