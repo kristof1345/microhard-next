@@ -2,7 +2,7 @@ import { useState } from "react";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import { AiFillMinusCircle } from "react-icons/ai";
 
-const Question = () => {
+export default function Question() {
   const [open, setOpen] = useState(false);
   return (
     <div className="q-holder">
@@ -39,6 +39,4 @@ const Question = () => {
       ) : null}
     </div>
   );
-};
-
-export default Question;
+}

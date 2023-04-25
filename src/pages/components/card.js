@@ -1,6 +1,6 @@
 import React from "react";
 
-const card = () => {
+export default function Card() {
   return (
     <div className="card">
       <div className="over">Help me plan my special trip</div>
@@ -10,6 +10,4 @@ const card = () => {
       </div>
     </div>
   );
-};
-
-export default card;
+}
