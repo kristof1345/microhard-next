@@ -514,6 +514,13 @@ body {
   font-size: 1.45rem;
 }
 
+.icons > svg {
+  transition: all 200ms ease-in-out;
+}
+.icons > svg:hover {
+  transform: translateY(-5px);
+}
+
 .cont-col1 {
   display: flex;
   flex-direction: column;
@@ -553,8 +560,19 @@ body {
   width: 400px;
 }
 
+.mid-sec_item > div {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-radius: 0.2rem;
+}
+
 .mid-sec_item > div > img {
   width: 100%;
+  border-radius: 0.2rem;
+  transition: all 250ms ease-in-out;
+}
+.mid-sec_item > div > img:hover {
+  transform: scale(105%);
 }
 .mid-sec_item > p {
   font-weight: 600;
@@ -615,6 +633,7 @@ body {
   border-radius: 0.2rem;
   border: 2px solid #174ae4;
   text-decoration: none;
+  transition: all 150ms ease-in-out;
 }
 
 .welcomer-bing > a:hover {
@@ -703,7 +722,6 @@ body {
 
 .q-holder {
   border-bottom: 1px solid #e5e5e5;
-  transition: all 500ms ease-in-out;
 }
 .question {
   display: flex;
