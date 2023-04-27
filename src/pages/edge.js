@@ -1,5 +1,7 @@
 import React from "react";
 import Head from "next/head";
+import edgeLogo from "../../public/edge-logo.png";
+import bingLogo from "../../public/bing-logo.png";
 
 export default function Edge() {
   return (
@@ -22,6 +24,39 @@ export default function Edge() {
             </div>
           </div>
         </div>
+        <section className="edge-main-content">
+          <div className="edge-new">
+            <div>
+              <img src={edgeLogo.src} alt="edge logo" />
+              <div className="edge-new-content">
+                <h3>What's new in Microsoft Edge</h3>
+                <p>
+                  Microsoft Edge introduces exciting new features every month.
+                  Check out the latest features here.
+                </p>
+              </div>
+            </div>
+            <button>See new features</button>
+          </div>
+          <div className="edge-bing-sec">
+            <div>
+              <img src={bingLogo.src} alt="edge logo" />
+              <div className="bing-content">
+                <h3>
+                  Introducing the new Bing. Your AI-powered copilot for the web.
+                </h3>
+                <p>
+                  With the new Bing, answers are just the beginning. Ask real
+                  questions. Make refinements in chat. Get comprehensive
+                  answers. Turn ideas into drafts. Find it built into Microsoft
+                  Edge, the best browser for the new Bing.
+                </p>
+              </div>
+            </div>
+            <button>Try now</button>
+          </div>
+          <div className="edge-content-sec"></div>
+        </section>
       </main>
     </>
   );
