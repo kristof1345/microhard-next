@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import edgeLogo from "../../public/edge-logo.png";
 import bingLogo from "../../public/bing-logo.png";
+import edgeContentImg from "../../public/edge-content.jpg";
 
 export default function Edge() {
   return (
@@ -55,7 +56,28 @@ export default function Edge() {
             </div>
             <button>Try now</button>
           </div>
-          <div className="edge-content-sec"></div>
+          <div className="edge-content-sec">
+            <div className="text-sec">
+              <h3>Achieve more performance</h3>
+              <p>
+                Built on the same technology as Chrome, Microsoft Edge has
+                additional built-in features like Startup boost and Sleeping
+                tabs, which boost your browsing experience with world class
+                performance and speed that are optimized to work best with
+                Windows.
+              </p>
+              <button>Try now</button>
+              <div className="eff-mode-holder">
+                <p>
+                  Get an average of 25 more minutes of battery life with
+                  efficiency mode. Only on Microsoft Edge.
+                </p>
+              </div>
+            </div>
+            <div className="edge-content-img-holder">
+              <img src={edgeContentImg.src} alt="women working" />
+            </div>
+          </div>
         </section>
       </main>
     </>
