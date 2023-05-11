@@ -25,4 +25,4 @@ const Posts1 = [
   },
 ];
 
-export { Posts1 };
+export default { Posts1 };
