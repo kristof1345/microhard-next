@@ -45,7 +45,6 @@ export default function Microhard365() {
         <div className="p365-stay-connected">
           <p>Stay connected and get things done with Microsoft 365</p>
         </div>
-        <section className="p365-switcher">ndkb</section>
       </main>
     </>
   );
