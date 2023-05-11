@@ -29,10 +29,10 @@ export default function Microhard365() {
         </section>
         <section className="p365-content">
           <div className="p365-c-img">
-            <Image src={desktop.src} />
+            <Image src={desktop.src} alt="vnle" />
           </div>
           <div className="p365-app">
-            <Image src={office.src} />
+            <Image src={office.src} alt="vnle" />
             <h2>The new Microsoft 365 app</h2>
             <p>
               The Microsoft 365 app is home to all your favorite productivity
