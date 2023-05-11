@@ -5,28 +5,29 @@ import BShop from "../../../public/shop-business.webp";
 import { Posts1 } from "../data/posts1";
 import edge from "../../../public/edge.avif";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Index_main() {
   return (
     <div>
       <div className="shop-sec">
         <Link href="#" className="item-1">
-          <img src={Windows.src} alt="windows logo" />
+          <Image src={Windows.src} alt="windows logo" />
           <div>Windows 11</div>
         </Link>
         <Link href="#" className="item-2">
-          <img src={Shop.src} alt="shop" />
+          <Image src={Shop.src} alt="shop" />
           <div>Shop here</div>
         </Link>
         <Link href="#" className="item-3">
-          <img src={BShop.src} alt="business shop" />
+          <Image src={BShop.src} alt="business shop" />
           <div>Business Shop</div>
         </Link>
       </div>
       <div className="posts-sec">
         {Posts1.map((post, i) => (
           <div className="post" key={i}>
-            <img src={edge.src} alt="post image" />
+            <Image src={edge.src} alt="post image" />
             <h2>{post.title}</h2>
             <p>{post.description}</p>
             <div>
@@ -52,7 +53,7 @@ export default function Index_main() {
         <h1 className="for-business">For Business</h1>
         {Posts1.map((post, i) => (
           <div className="post" key={i}>
-            <img src={edge.src} alt="post image" />
+            <Image src={edge.src} alt="post image" />
             <h2>{post.title}</h2>
             <p>{post.description}</p>
             <div>

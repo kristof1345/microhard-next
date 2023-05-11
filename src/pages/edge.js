@@ -3,6 +3,7 @@ import Head from "next/head";
 import edgeLogo from "../../public/edge-logo.png";
 import bingLogo from "../../public/bing-logo.png";
 import edgeContentImg from "../../public/edge-content.jpg";
+import Image from "next/image";
 
 export default function Edge() {
   return (
@@ -28,7 +29,7 @@ export default function Edge() {
         <section className="edge-main-content">
           <div className="edge-new">
             <div>
-              <img src={edgeLogo.src} alt="edge logo" />
+              <Image src={edgeLogo.src} alt="edge logo" />
               <div className="edge-new-content">
                 <h3>What&apos;s new in Microsoft Edge</h3>
                 <p>
@@ -41,7 +42,7 @@ export default function Edge() {
           </div>
           <div className="edge-bing-sec">
             <div>
-              <img src={bingLogo.src} alt="edge logo" />
+              <Image src={bingLogo.src} alt="edge logo" />
               <div className="bing-content">
                 <h3>
                   Introducing the new Bing. Your AI-powered copilot for the web.
@@ -75,7 +76,7 @@ export default function Edge() {
               </div>
             </div>
             <div className="edge-content-img-holder">
-              <img src={edgeContentImg.src} alt="women working" />
+              <Image src={edgeContentImg.src} alt="women working" />
             </div>
           </div>
         </section>

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import office from "../../public/office-change.avif";
 import desktop from "../../public/office-desktop.avif";
+import Image from "next/image";
 
 export default function Microhard365() {
   return (
@@ -28,10 +29,10 @@ export default function Microhard365() {
         </section>
         <section className="p365-content">
           <div className="p365-c-img">
-            <img src={desktop.src} />
+            <Image src={desktop.src} />
           </div>
           <div className="p365-app">
-            <img src={office.src} />
+            <Image src={office.src} />
             <h2>The new Microsoft 365 app</h2>
             <p>
               The Microsoft 365 app is home to all your favorite productivity

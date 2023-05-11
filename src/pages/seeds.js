@@ -4,6 +4,7 @@ import { MdContentCopy } from "react-icons/md";
 import mid1 from "../../public/mid1.webp";
 import mid2 from "../../public/mid2.webp";
 import mid3 from "../../public/mid3.webp";
+import Image from "next/image";
 
 export default function Seeds() {
   return (
@@ -36,11 +37,11 @@ export default function Seeds() {
               <BsLinkedin />
             </div>
             <div className="quote-holder">
-              "Nobody accepts that heatwaves are a threat. They say,
+              &qout;Nobody accepts that heatwaves are a threat. They say,
               &apos;It&apos;s hot everywhere, what&apos;s so special about our
               area?&apos; Yet, every day people suffer heatstroke, diarrhea,
               dehydration—even sunburn so severe their faces are
-              unrecognizable."
+              unrecognizable.&qout;
               <p>
                 Rinki Gupta
                 <br /> Project Manager, SEEDS
@@ -86,7 +87,7 @@ export default function Seeds() {
         <div className="mid-sec">
           <div className="mid-sec_item">
             <div>
-              <img src={mid1.src} alt="images" />
+              <Image src={mid1.src} alt="images" />
             </div>
             <p>
               SEED community mobilizers use AI-generated maps to find high risk
@@ -95,7 +96,7 @@ export default function Seeds() {
           </div>
           <div className="mid-sec_item">
             <div>
-              <img src={mid2.src} alt="images" />
+              <Image src={mid2.src} alt="images" />
             </div>
             <p>
               SEED community mobilizers use AI-generated maps to find high risk
@@ -104,7 +105,7 @@ export default function Seeds() {
           </div>
           <div className="mid-sec_item">
             <div>
-              <img src={mid3.src} alt="images" />
+              <Image src={mid3.src} alt="images" />
             </div>
             <p>
               SEED community mobilizers use AI-generated maps to find high risk
@@ -118,8 +119,8 @@ export default function Seeds() {
               <br />
             </div>
             <div className="quote-holder">
-              "We&apos;d evacuate to the roof with all our food. Sometimes
-              we&apos;d stay for months until the water receded."
+              &qout;We&apos;d evacuate to the roof with all our food. Sometimes
+              we&apos;d stay for months until the water receded.&qout;
               <p>
                 Rinki Gupta
                 <br /> Project Manager, SEEDS

@@ -1,12 +1,13 @@
 import logo from "../../../public/logo.png";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   return (
     <div className="header-holder">
       <div className="header">
         <Link href="/" className="logo-holder">
-          <img src={logo.src} alt="microsoft logo" className="logo" />
+          <Image src={logo.src} alt="microsoft logo" className="logo" />
           <span className="logo-text">Microhard</span>
         </Link>
         <nav className="nav">
