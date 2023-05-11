@@ -41,8 +41,8 @@ export default function Bing() {
           <h2>Frequently Asked Questions</h2>
           <p>Have questions? Start here</p>
           <div className="questions-dropdown">
-            {cards.map((q) => (
-              <Question />
+            {cards.map((q, i) => (
+              <Question key={i} />
             ))}
           </div>
         </div>

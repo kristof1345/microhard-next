@@ -30,7 +30,7 @@ export default function Edge() {
             <div>
               <img src={edgeLogo.src} alt="edge logo" />
               <div className="edge-new-content">
-                <h3>What's new in Microsoft Edge</h3>
+                <h3>What&apos;s new in Microsoft Edge</h3>
                 <p>
                   Microsoft Edge introduces exciting new features every month.
                   Check out the latest features here.

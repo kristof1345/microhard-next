@@ -35,9 +35,9 @@ export default function Microhard365() {
             <h2>The new Microsoft 365 app</h2>
             <p>
               The Microsoft 365 app is home to all your favorite productivity
-              apps and content. It’s everything you loved in the Office app with
-              a new look and name, plus added smart features to help you create,
-              share, and collaborate, all in place.
+              apps and content. It&apos;s everything you loved in the Office app
+              with a new look and name, plus added smart features to help you
+              create, share, and collaborate, all in place.
             </p>
             <button>Learn more</button>
           </div>
