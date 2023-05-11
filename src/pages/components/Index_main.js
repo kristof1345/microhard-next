@@ -66,7 +66,7 @@ export default function Index_main() {
         <div>
           <h3>Making climate change threats visible</h3>
           <p>
-            Discover how SEEDS is using Microsoft AI to help India's most
+            Discover how SEEDS is using Microsoft AI to help India&apos;s most
             vulnerable communities survive, adapt, and thrive when impacted by
             the disastrous results of climate change.
           </p>

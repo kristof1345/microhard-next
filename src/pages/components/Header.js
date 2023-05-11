@@ -28,8 +28,12 @@ export default function Header() {
           <Link href="#" className="other-item">
             Search
           </Link>
-          <Link href="#" className="other-item">
-            User
+          <Link
+            href="https://github.com/kristof1345/microhard-next"
+            target="_blank"
+            className="other-item"
+          >
+            Github
           </Link>
         </div>
       </div>

@@ -21,7 +21,7 @@ export default function Bing() {
         <div className="welcomer-bing">
           <h1>Introducing the new Bing</h1>
           <h2>Ask real questions. Get complete answers. Chat and create.</h2>
-          <h3>You're in! Welcome to the new Bing!</h3>
+          <h3>You&apos;re in! Welcome to the new Bing!</h3>
           <p>Unlock the full experience on Microsoft Edge</p>
           <Link href="#">Open in Microhard Edge</Link>
         </div>
