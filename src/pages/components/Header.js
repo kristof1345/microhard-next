@@ -10,14 +10,26 @@ export default function Header() {
           <span className="logo-text">Microhard</span>
         </Link>
         <nav className="nav">
-          <Link href="#" className="nav-item">
+          <Link href="/microhard365" className="nav-item">
             Microhard 365
           </Link>
           <Link href="/bing" className="nav-item">
             Bing
           </Link>
-          <Link href="#" className="nav-item">
-            Windows
+          <Link href="/edge" className="nav-item">
+            Microhard Edge
+          </Link>
+          <Link href="/seeds" className="nav-item">
+            Seeds
+          </Link>
+          <div className="hover"></div>
+        </nav>
+        <nav className="mobile-nav">
+          <Link href="/microhard365" className="nav-item">
+            Microhard 365
+          </Link>
+          <Link href="/bing" className="nav-item">
+            Bing
           </Link>
           <Link href="/edge" className="nav-item">
             Microhard Edge
